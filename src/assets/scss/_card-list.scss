@@ -1,0 +1,115 @@
+.card-deck {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .card {
+        width: 31.914894vw;
+        max-width: 300px;
+
+        &:nth-child(2) {
+            margin: 0 20px;
+        }
+
+        .card-img-top {
+            height: 32.012159vh;
+            max-height: 315px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            display: flex;
+            color: $darkgreen;
+            font-size: 20px;
+            border: 1px solid $lightgreen;
+            padding: 0px;
+
+            .card-title {
+                padding: 14px 33px;
+
+                &:first-child {
+                    border-right: 1px solid $lightgreen;
+                }
+
+                &:last-child {
+                    font-weight: bold;
+                    padding: 14px 20px 14px 25px;
+                }
+            }
+        }
+
+        .card-footer {
+            color: $darkgreen;
+            background-color: $lightgreen;
+            font-size: 24px;
+            font-weight: bold;
+            padding: 16px 0;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.mobile-cards {
+    display: none;
+}
+
+.cards {
+    margin-top: 60px;
+}
+
+@media (max-width:768px) {
+    .card-deck {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0px;
+
+        .card {
+            width: 315px;
+            max-width: 315px;
+            margin-bottom: 30px;
+
+            &:nth-child(2) {
+                margin-bottom: 30px;
+            }
+
+            .card-img-top {
+                height: 315px;
+            }
+
+            .card-body {
+                .card-title {
+                    padding: 14px 38px;
+
+                    &:last-child {
+                        padding: 14px 25.4px 14px 25.95px;
+                    }
+                }
+            }
+        }
+    }
+
+    .cards {
+        .card-deck {
+            .card-nav {
+                display: none;
+            }
+
+            .card {
+                &:first-child {
+                    display: none;
+                }
+
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .mobile-cards {
+        display: flex;
+    }
+}
