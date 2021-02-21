@@ -1,4 +1,6 @@
-# Vue-Final_Project
+# car-shop
+
+https://des86532.github.io/car-shop/
 
 ## Project setup
 ```
