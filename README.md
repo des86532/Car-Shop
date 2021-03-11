@@ -1,7 +1,3 @@
-# car-shop
-
-https://des86532.github.io/car-shop/
-
 ## Project setup
 ```
 npm install
